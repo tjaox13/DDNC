@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <title>SUM</title>
+</head>
+
+<body>
+    <p>a <input type="text" id="a" /> </p>
+    <p>b <input type="text" id="b" /> </p>
+    <script>
+        function sum() {
+            let a = Number(document.getElementById("a").value);
+            let b = Number(document.getElementById("b").value);
+
+            let sum = parseInt(a) + b;
+
+            document.getElementById('result').innerHTML = sum;
+        }
+        document.getElementById("btn_id").onclick = function() {
+            sum()
+        };
+        var btn = document.createElement("SUM");
+        btn.setAttribute("id", "btn_id");
+        btn.setAttribute("class", "btn_class");
+        btn.setAttribute("width", "250px");
+    </script>
+
+</body>
+
+</html>
